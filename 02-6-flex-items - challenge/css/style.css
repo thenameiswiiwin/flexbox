@@ -1,5 +1,5 @@
 /*  /////////////////
-    Your task 
+    Your task
     /////////////////
 
     1. Get the 3 `.column` classes next
@@ -15,7 +15,16 @@
 
     ///////////////// */
 
+.container {
+	display: flex;
+	margin: 2em;
+	border: 2px solid red;
+	text-align: center;
+}
+
 .column {
-  padding: 2rem;
-  border: 2px solid black;
+	width: 33.33%;
+	margin: 0.5em;
+	padding: 2rem;
+	border: 2px solid black;
 }

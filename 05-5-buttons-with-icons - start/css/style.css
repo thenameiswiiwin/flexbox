@@ -1,32 +1,44 @@
 .flex-container {
-  width: 70%;
-  max-width: 60rem;
-  border: 5px solid #000;
-  padding: 2em;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 35em;
+	border: 5px solid #000;
+	margin: 2em;
 }
 
 .btn {
-  display: inline-block;
-  cursor: pointer;
-  text-decoration: none;
-  padding: 0 .5em 0 0;
-  color: black;
-  background: white;
-  border: 2px solid black;
-  margin: 1em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	text-decoration: none;
+	padding: 0 0.5em 0 0;
+	color: black;
+	background: white;
+	border: 2px solid black;
+	margin: 1em;
 }
 
 .btn:hover,
 .btn:focus {
-  background: black;
-  color: white;
+	background: black;
+	color: white;
 }
 
 .btn .icon {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: white;
-  padding: .25em;
-  margin-right: .5em;
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: white;
+	padding: 0.25em;
+	margin-right: 0.5em;
+}
+
+@media (min-width: 775px) {
+	.flex-container {
+		flex-direction: row;
+		justify-content: space-evenly;
+		padding: 2em;
+	}
 }

@@ -20,12 +20,10 @@ header {
 	color: white;
 	padding: 2rem;
 }
-header nav {
-	margin-top: 2em;
-}
 
 .logo {
-	width: 20rem;
+	width: 10rem;
+	margin: 2em 0;
 }
 
 nav ul {
@@ -42,7 +40,7 @@ nav a:focus {
 	color: yellowgreen;
 }
 ul li + li {
-	margin-left: 0.5em;
+	margin-left: 1em;
 }
 
 .container {
@@ -59,6 +57,9 @@ ul li + li {
 	}
 	header nav {
 		margin-top: 0;
+	}
+	.logo {
+		width: 20rem;
 	}
 	.container {
 		margin: 0 auto;

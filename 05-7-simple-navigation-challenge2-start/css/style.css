@@ -48,6 +48,12 @@ ul li + li {
 	text-align: center;
 }
 
+@media (min-width: 778px) {
+	.logo {
+		width: 20rem;
+	}
+}
+
 @media (min-width: 950px) {
 	header {
 		flex-direction: row;

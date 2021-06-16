@@ -30,7 +30,7 @@
 }
 .split-evenly > * + * {
 	margin-left: 1em;
-}
+} /* No specificity  gains. Lobotomized Owls {* + *} */
 
 form {
 	display: flex;

@@ -1,44 +1,46 @@
 header {
-  margin-bottom: 3rem;
+	margin-bottom: 3rem;
 }
 
 .container {
-  padding: 0 2em;
-  max-width: 75rem;
-  margin: 0 auto;
+	padding: 0 2em;
+	max-width: 75rem;
+	margin: 0 auto;
 }
 
 .content-sidebar {
-  display: flex;
-  align-items: flex-start;
-  gap: 4rem;
-  flex-wrap: wrap;
+	display: flex;
+	align-items: flex-start;
+	gap: 4rem;
+	flex-wrap: wrap;
 }
 
 main {
-  flex-grow: 9999;
-  flex-basis: 50%;
+	flex-grow: 9999;
+	flex-basis: 50%;
 }
 
 aside {
-  border: 4px solid black;
-  padding: 1em;
+	border: 4px solid black;
+	padding: 1em;
 }
 
 .adaptable-sidebar {
-  flex-basis: 20rem;
-  flex-grow: 1;
+	flex-basis: 20rem;
+	flex-grow: 1;
 
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
+	/* It is a flex child, but display: flex will make it as a parent at the same time */
+	display: flex;
+	flex-wrap: wrap; /* Fix problem, make items wrapped */
+	gap: 1em;
 }
 
 .adaptable-sidebar > * {
-  flex-basis: 100%;
+	flex-basis: 100%; /* Everything will stretch 100%, except for the .cards */
 }
 
+/* any .card inside the adaptable-sidebar will get these properties on it */
 .adaptable-sidebar > .card {
-  flex-basis: 1%;
-  flex-grow: 1;
+	flex-basis: 1%;
+	flex-grow: 1;
 }

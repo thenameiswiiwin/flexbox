@@ -1,26 +1,26 @@
 body {
-  /* background: pink; */
+	/* background: pink; */
 
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 header,
 footer {
-  width: 100%;
-  background: black;
-  color: white;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	width: 100%;
+	background: black;
+	color: white;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 main {
-  padding: 3rem;
+	padding: 3rem;
 }
 
 footer {
-  margin-top: auto;
+	margin-top: auto;
 }
